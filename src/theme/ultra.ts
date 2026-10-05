@@ -1,0 +1,1 @@
+export const Ultra={bg:"#062818",bgSoft:"#0A3A24",gold:"#E8C96A",goldSoft:"#F3E2A8",cream:"#F7F3E8",pearl:"#F4F0E6",ink:"#F7F3E8",deep:"#03180E",card:"#0D3F2A",river:"#1A6B5A",mist:"#C5E4D4",shadow:{shadowColor:"#E8C96A",shadowOpacity:.22,shadowRadius:20,shadowOffset:{width:0,height:8},elevation:14}} as const;
