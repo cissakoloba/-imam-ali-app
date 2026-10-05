@@ -1,0 +1,5 @@
+import {hadithOfDay,isPublishable} from "./hadiths";
+const ID="imam-ali-hadith-daily";
+function bodyForToday(){const card=hadithOfDay();if(!isPublishable(card))return null;return{title:"Hadith du jour · Imam Ali",body:`${card.textFr}\n${card.corpus} n° ${card.reference} · ${card.grade}`}}
+export async function enableDailyHadith():Promise<"ok"|"denied"|"empty">{const payload=bodyForToday();if(!payload)return"empty";const Notifications=await import("expo-notifications");Notifications.setNotificationHandler({handleNotification:async()=>({shouldShowAlert:true,shouldPlaySound:false,shouldSetBadge:false})});const perm=await Notifications.requestPermissionsAsync();if(perm.status!=="granted")return"denied";await Notifications.cancelScheduledNotificationAsync(ID).catch(()=>undefined);await Notifications.scheduleNotificationAsync({identifier:ID,content:{title:payload.title,body:payload.body,sound:false},trigger:{hour:7,minute:0,repeats:true,type:"daily"} as never});return"ok"}
+export async function disableDailyHadith(){try{const N=await import("expo-notifications");await N.cancelScheduledNotificationAsync(ID)}catch{}}
