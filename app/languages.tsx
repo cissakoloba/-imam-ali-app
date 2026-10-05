@@ -1,0 +1,3 @@
+import { Pressable, StyleSheet, Text, View } from "react-native";
+export default function LanguagesScreen(){return <View style={s.wrap}><Text style={s.title}>Langue</Text>{["Français","العربية","English"].map(x=><Pressable key={x} style={s.item}><Text style={s.txt}>{x}</Text></Pressable>)}</View>}
+const s=StyleSheet.create({wrap:{flex:1,padding:20,backgroundColor:"#062818"},title:{fontSize:25,fontWeight:"700",color:"#F3E2A8",marginBottom:20},item:{padding:16,backgroundColor:"#0D3F2A",borderRadius:12,marginBottom:10},txt:{color:"#F7F3E8",fontSize:18}});
