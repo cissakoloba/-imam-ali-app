@@ -1,5 +1,5 @@
 {
   "cli":{"version":">= 16.0.0","appVersionSource":"remote"},
-  "build":{"development":{"developmentClient":true,"distribution":"internal"},"preview":{"distribution":"internal","channel":"preview","android":{"buildType":"apk"},"env":{"EXPO_PUBLIC_WAVE_MSISDN":""}},"production":{"channel":"production"}},
+  "build":{"development":{"developmentClient":true,"distribution":"internal"},"preview":{"distribution":"internal","channel":"preview","android":{"buildType":"apk"},"env":{"EXPO_PUBLIC_WAVE_MSISDN":"+2250710206995"}},"production":{"channel":"production"}},
   "submit":{"production":{}}
 }
