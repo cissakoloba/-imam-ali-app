@@ -3,6 +3,6 @@
   "ios":{"supportsTablet":false,"bundleIdentifier":"com.koloba.imamali"},
   "android":{"package":"com.koloba.imamali","adaptiveIcon":{"foregroundImage":"./assets/adaptive-icon.png","backgroundColor":"#062818"},"permissions":["POST_NOTIFICATIONS","VIBRATE"]},
   "plugins":["expo-router","expo-secure-store", ["expo-audio",{"enableBackgroundPlayback":true,"enableBackgroundRecording":false}],["expo-notifications",{"icon":"./assets/icon.png","color":"#062818","defaultChannel":"hadith"}]],
-  "experiments":{"typedRoutes":true},"extra":{"eas":{"projectId":"REPLACE_AFTER_EAS_INIT"}},
+  "experiments":{"typedRoutes":true},"extra":{"eas":{"projectId":"59615d35-0906-4946-b0e3-cd6b226e4450 "}},
   "splash":{"image":"./assets/splash.png","resizeMode":"contain","backgroundColor":"#062818"}}
 }
